@@ -1,0 +1,4 @@
+model,MAE,RMSE,R2,CV_MAE_mean
+Ridge,26.383,35.077,0.375,17.794
+Random forest,28.273,39.107,0.223,12.826
+Gradient boosting,30.586,43.01,0.06,14.975
