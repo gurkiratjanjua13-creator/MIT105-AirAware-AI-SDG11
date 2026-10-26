@@ -1,0 +1,32 @@
+{
+  "source": "https://air-quality-api.open-meteo.com/v1/air-quality",
+  "location": "Delhi 28.6139,77.2090",
+  "period": "2025-01-01 to 2025-12-31",
+  "data_type": "CAMS modelled, not ground-station observations",
+  "train_days": 286,
+  "test_days": 72,
+  "selected_model": "Ridge",
+  "metrics": [
+    {
+      "model": "Ridge",
+      "MAE": 26.383,
+      "RMSE": 35.077,
+      "R2": 0.375,
+      "CV_MAE_mean": 17.794
+    },
+    {
+      "model": "Random forest",
+      "MAE": 28.273,
+      "RMSE": 39.107,
+      "R2": 0.223,
+      "CV_MAE_mean": 12.826
+    },
+    {
+      "model": "Gradient boosting",
+      "MAE": 30.586,
+      "RMSE": 43.01,
+      "R2": 0.06,
+      "CV_MAE_mean": 14.975
+    }
+  ]
+}
