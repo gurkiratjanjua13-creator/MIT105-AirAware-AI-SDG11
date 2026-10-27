@@ -7,7 +7,7 @@
 [![Project](https://img.shields.io/badge/Status-Research%20Prototype-16A6A1)](#limitations-and-integrity)
 [![SDG](https://img.shields.io/badge/UN%20SDG-11-orange)](https://sdgs.un.org/goals/goal11)
 
-> **Deployment status:** GitHub source and trained model available. Public Streamlit URL has not yet been verified; do not mistake this repository or localhost for public deployment.
+> **Public deployment (browser-tested 27 October 2026):** [Launch AirAware AI](https://mit105-airaware-ai-sdg11.streamlit.app/). The recorded demonstration used lag1=75, lag2=70, lag7=65, rolling7=70 µg/m³ and displayed 67.8 µg/m³. This confirms functional inference in the browser, not independent validation against ground-monitor measurements.
 
 ## Project overview
 
@@ -99,11 +99,13 @@ python -m pytest -q
 | `DEPLOYMENT.md` | Step-by-step public deployment and verification |
 | `requirements.txt` | Runtime and research dependencies |
 
-**Submission files are intentionally kept outside this source repository.** The Moodle/Turnitin submission bundle contains the report (DOCX/PDF) and presentation only.
+**Submission files are intentionally kept outside this source repository.** The assessment submission deliverables are the report (DOCX or PDF, per the brief) and accompanying presentation when requested. Source files remain in this repository.
 
 ## Public deployment
 
-Follow [DEPLOYMENT.md](DEPLOYMENT.md) to deploy `main:app.py` using Streamlit Community Cloud. After deploying, record the public URL and evidence screenshots in the assessment documents. Do not publish private credentials.
+**Live app:** https://mit105-airaware-ai-sdg11.streamlit.app/  
+**Source:** https://github.com/gurkiratjanjua13-creator/MIT105-AirAware-AI-SDG11  
+**Functional evidence:** Browser screenshot captured 27 October 2026 and included in the assessment report. The public interface displays Ridge model inference and the three-model chronological holdout comparison. See [DEPLOYMENT.md](DEPLOYMENT.md) for the verification record and redeployment steps. Do not publish private credentials.
 
 ## Limitations and integrity
 
